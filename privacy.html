@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — I Did A Thing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream: #F5F0E8; --ink: #1A1814; --warm-mid: #8C7B6B;
+      --accent: #D4622A; --border: #E2D9CC; --card-bg: #FFFFFF;
+    }
+    body {
+      background: var(--cream); color: var(--ink);
+      font-family: 'DM Sans', sans-serif; font-size: 17px; line-height: 1.7;
+    }
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 48px; border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: 'Instrument Serif', serif; font-size: 1.2rem;
+      color: var(--ink); text-decoration: none;
+    }
+    .nav-back {
+      font-size: 0.88rem; color: var(--warm-mid); text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--ink); }
+    main {
+      max-width: 720px; margin: 0 auto; padding: 80px 24px 120px;
+    }
+    h1 {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      letter-spacing: -0.03em; margin-bottom: 12px;
+    }
+    .updated {
+      font-size: 0.85rem; color: var(--warm-mid); margin-bottom: 48px;
+      font-weight: 300;
+    }
+    h2 {
+      font-family: 'Instrument Serif', serif; font-size: 1.4rem;
+      margin-top: 40px; margin-bottom: 12px; letter-spacing: -0.01em;
+    }
+    p { margin-bottom: 16px; color: #3A362F; font-weight: 300; }
+    ul { margin: 0 0 16px 24px; }
+    li { margin-bottom: 8px; color: #3A362F; font-weight: 300; }
+    footer {
+      border-top: 1px solid var(--border); padding: 40px 48px;
+      text-align: center; font-size: 0.78rem; color: var(--warm-mid);
+    }
+    footer a { color: var(--warm-mid); text-decoration: none; }
+    footer a:hover { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo">I Did A Thing</a>
+    <a href="index.html" class="nav-back">&larr; Back to home</a>
+  </nav>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: March 29, 2026</p>
+
+    <h2>The short version</h2>
+    <p>I Did A Thing does not collect, transmit, or store any of your data on external servers. Everything stays on your device. We have no accounts, no analytics, no tracking, and no cloud infrastructure. Your data is yours — period.</p>
+
+    <h2>Data storage</h2>
+    <p>All activity logs, categories, profiles, reminders, and settings are stored locally on your iPhone as JSON files. This data never leaves your device unless you explicitly choose to back it up using iCloud Drive or the Files app.</p>
+
+    <h2>iCloud Drive backup</h2>
+    <p>If you choose to use the optional iCloud Drive backup feature, your data is transferred directly to your personal iCloud account using Apple's built-in file system APIs. We do not have access to your iCloud account or any data you store there. Apple's own privacy policy governs data stored in iCloud.</p>
+
+    <h2>Photos and file attachments</h2>
+    <p>When you attach photos or files to a log entry, those files are stored locally on your device alongside your log data. They are never uploaded to any server.</p>
+
+    <h2>Siri and voice input</h2>
+    <p>The Siri shortcut and in-app voice-to-text features use Apple's built-in speech recognition. Voice data is processed by Apple according to their privacy policy. We do not receive, store, or process any voice recordings.</p>
+
+    <h2>Notifications</h2>
+    <p>Reminders are scheduled using Apple's local notification system. They are processed entirely on-device and do not involve any external push notification service.</p>
+
+    <h2>Analytics and tracking</h2>
+    <p>I Did A Thing contains no analytics SDKs, no tracking pixels, no crash reporting services, and no third-party code that collects user data. We do not use App Store analytics beyond what Apple provides to all developers in aggregate (e.g., download counts and crash logs — none of which contain your personal activity data).</p>
+
+    <h2>Third-party services</h2>
+    <p>The app does not integrate with any third-party services. There are no ads, no social features, and no external API calls.</p>
+
+    <h2>Data deletion</h2>
+    <p>Since all your data is stored locally on your device, you can delete it at any time by deleting individual log entries within the app or by uninstalling the app entirely. We have no copies of your data to delete on our end because we never had it in the first place.</p>
+
+    <h2>Children's privacy</h2>
+    <p>I Did A Thing does not knowingly collect information from children under 13. The app does not collect information from anyone — it is a fully offline, local-only tool.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we ever change this privacy policy, we will update this page and note the date. Given the nature of the app (fully offline, no data collection), we do not anticipate meaningful changes.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, you can reach us at <a href="mailto:support@ididathing.app" style="color: var(--accent);">support@ididathing.app</a>.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Gabriel Bellas. All rights reserved. &nbsp;·&nbsp; <a href="index.html">Home</a> &nbsp;·&nbsp; <a href="support.html">Support</a></p>
+  </footer>
+</body>
+</html>

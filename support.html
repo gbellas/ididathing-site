@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — I Did A Thing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream: #F5F0E8; --ink: #1A1814; --warm-mid: #8C7B6B;
+      --accent: #D4622A; --border: #E2D9CC; --card-bg: #FFFFFF;
+    }
+    body {
+      background: var(--cream); color: var(--ink);
+      font-family: 'DM Sans', sans-serif; font-size: 17px; line-height: 1.7;
+    }
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 48px; border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: 'Instrument Serif', serif; font-size: 1.2rem;
+      color: var(--ink); text-decoration: none;
+    }
+    .nav-back {
+      font-size: 0.88rem; color: var(--warm-mid); text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--ink); }
+    main {
+      max-width: 720px; margin: 0 auto; padding: 80px 24px 120px;
+    }
+    h1 {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      letter-spacing: -0.03em; margin-bottom: 12px;
+    }
+    .subtitle {
+      font-size: 1.05rem; color: var(--warm-mid); font-weight: 300;
+      margin-bottom: 48px;
+    }
+    h2 {
+      font-family: 'Instrument Serif', serif; font-size: 1.4rem;
+      margin-top: 40px; margin-bottom: 12px; letter-spacing: -0.01em;
+    }
+    p { margin-bottom: 16px; color: #3A362F; font-weight: 300; }
+    .contact-card {
+      background: var(--card-bg); border: 1px solid var(--border);
+      border-radius: 16px; padding: 32px; margin: 32px 0;
+      text-align: center;
+    }
+    .contact-card a {
+      display: inline-block; background: var(--ink); color: var(--cream);
+      text-decoration: none; padding: 14px 28px; border-radius: 100px;
+      font-size: 0.95rem; font-weight: 500;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .contact-card a:hover {
+      background: var(--accent); transform: translateY(-1px);
+    }
+    .contact-card p { margin-bottom: 20px; }
+    .faq-item { margin-bottom: 28px; }
+    .faq-item h3 {
+      font-weight: 500; font-size: 1rem; margin-bottom: 6px; color: var(--ink);
+    }
+    .faq-item p { font-size: 0.95rem; }
+    footer {
+      border-top: 1px solid var(--border); padding: 40px 48px;
+      text-align: center; font-size: 0.78rem; color: var(--warm-mid);
+    }
+    footer a { color: var(--warm-mid); text-decoration: none; }
+    footer a:hover { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo">I Did A Thing</a>
+    <a href="index.html" class="nav-back">&larr; Back to home</a>
+  </nav>
+
+  <main>
+    <h1>Support</h1>
+    <p class="subtitle">Have a question or need help? We're here for you.</p>
+
+    <div class="contact-card">
+      <p>The fastest way to reach us is by email. We typically respond within 24 hours.</p>
+      <a href="mailto:support@ididathing.app">Email support@ididathing.app</a>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+
+    <div class="faq-item">
+      <h3>Where is my data stored?</h3>
+      <p>All your data is stored locally on your iPhone as JSON files. Nothing is sent to any server. You own your data completely.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I back up my data?</h3>
+      <p>Go to Settings in the app and tap "Back up to iCloud Drive." This saves a copy of your data to your personal iCloud Drive, which you can access from the Files app.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I transfer my data to a new phone?</h3>
+      <p>Yes. If you use Apple's built-in device migration (iCloud backup or direct transfer), your app data transfers automatically. You can also use the iCloud Drive backup feature to manually export and import your data.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I set up the Siri shortcut?</h3>
+      <p>Open the app, go to Settings, and tap "Add Siri Shortcut." You can customize the phrase — the default is "I did a thing." Once set up, just say the phrase to Siri and your log form opens automatically.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is there a subscription?</h3>
+      <p>No. I Did A Thing is a one-time purchase of $3.99. There are no subscriptions, in-app purchases, or hidden fees. You pay once and the app is yours forever.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I delete my data?</h3>
+      <p>Yes. You can delete individual log entries from within the app, or delete all data by uninstalling the app. Since we never have your data, there's nothing to request deletion of on our end.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What iOS version do I need?</h3>
+      <p>I Did A Thing requires iOS 17 or later. It runs on all iPhones that support iOS 17.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Gabriel Bellas. All rights reserved. &nbsp;·&nbsp; <a href="index.html">Home</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
