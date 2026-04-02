@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>I Did A Thing â Your personal activity log</title>
+  <title>I Did A Thing &mdash; Your personal activity log</title>
   <meta name="description" content="Log anything you actually do and want to remember. No streaks, no shame. Just your life on record." />
 
-  <meta property="og:title" content="I Did A Thing — Your personal activity log" />
+  <meta property="og:title" content="I Did A Thing &mdash; Your personal activity log" />
   <meta property="og:description" content="A private, flexible activity log for the stuff you do and want to remember. Available on iPhone, iPad, Apple Watch, and Apple Vision Pro." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ididath.ing" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="I Did A Thing" />
   <meta name="twitter:description" content="A private, flexible activity log. No streaks. No shame. Just your life on record." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
@@ -43,7 +44,7 @@
       overflow-x: hidden;
     }
 
-    /* ââ NOISE TEXTURE OVERLAY ââ */
+    /* -- NOISE TEXTURE OVERLAY -- */
     body::before {
       content: '';
       position: fixed;
@@ -54,7 +55,7 @@
       opacity: 0.4;
     }
 
-    /* ââ NAV ââ */
+    /* -- NAV -- */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -108,7 +109,7 @@
       transform: translateY(-1px);
     }
 
-    /* ââ HERO ââ */
+    /* -- HERO -- */
     .hero {
       min-height: 100vh;
       display: flex;
@@ -232,7 +233,7 @@
       gap: 8px;
     }
 
-    /* ââ MANIFESTO ââ */
+    /* -- MANIFESTO -- */
     .manifesto {
       padding: 120px 24px;
       max-width: 800px;
@@ -251,7 +252,7 @@
     .manifesto-text .muted { color: var(--warm-mid); }
     .manifesto-text em { font-style: italic; color: var(--accent); }
 
-    /* ââ FEATURES ââ */
+    /* -- FEATURES -- */
     .features {
       padding: 80px 24px 120px;
       max-width: 1100px;
@@ -307,7 +308,7 @@
       font-weight: 300;
     }
 
-    /* ââ PRIVACY SECTION ââ */
+    /* -- PRIVACY SECTION -- */
     .privacy-band {
       background: var(--ink);
       color: var(--cream);
@@ -318,7 +319,7 @@
     }
 
     .privacy-band::before {
-      content: 'ð';
+      content: '&#128274;';
       position: absolute;
       font-size: 20rem;
       opacity: 0.04;
@@ -336,10 +337,7 @@
       line-height: 1.1;
     }
 
-    .privacy-band h2 em {
-      font-style: italic;
-      color: var(--accent-light);
-    }
+    .privacy-band h2 em { font-style: italic; color: var(--accent-light); }
 
     .privacy-band p {
       font-size: 1.05rem;
@@ -366,7 +364,7 @@
       letter-spacing: 0.03em;
     }
 
-    /* ââ USE CASES ââ */
+    /* -- USE CASES -- */
     .use-cases {
       padding: 120px 24px;
       max-width: 900px;
@@ -409,6 +407,7 @@
     }
 
     .log-item:last-child { border-bottom: none; }
+
     .log-item:hover { background: #FDFAF6; }
 
     .log-item-emoji {
@@ -423,9 +422,7 @@
       flex-shrink: 0;
     }
 
-    .log-item-text {
-      flex: 1;
-    }
+    .log-item-text { flex: 1; }
 
     .log-item-title {
       font-weight: 500;
@@ -446,7 +443,7 @@
       flex-shrink: 0;
     }
 
-    /* ââ CTA ââ */
+    /* -- CTA -- */
     .cta-section {
       padding: 100px 24px 140px;
       text-align: center;
@@ -460,10 +457,7 @@
       line-height: 1.05;
     }
 
-    .cta-section h2 em {
-      font-style: italic;
-      color: var(--accent);
-    }
+    .cta-section h2 em { font-style: italic; color: var(--accent); }
 
     .cta-section p {
       color: var(--warm-mid);
@@ -472,7 +466,7 @@
       font-size: 1.05rem;
     }
 
-    /* ââ FOOTER ââ */
+    /* -- FOOTER -- */
     footer {
       border-top: 1px solid var(--border);
       padding: 40px 48px;
@@ -510,10 +504,10 @@
       font-weight: 300;
     }
 
-    /* ââ ANIMATIONS ââ */
+    /* -- ANIMATIONS -- */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(24px); }
-      to   { opacity: 1; transform: translateY(0); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .reveal {
@@ -527,15 +521,11 @@
       transform: translateY(0);
     }
 
-    /* ââ RESPONSIVE ââ */
+    /* -- RESPONSIVE -- */
     @media (max-width: 768px) {
       nav { padding: 16px 24px; }
       .nav-links { display: none; }
-
-      .features-grid {
-        grid-template-columns: 1fr;
-      }
-
+      .features-grid { grid-template-columns: 1fr; }
       footer {
         flex-direction: column;
         align-items: flex-start;
@@ -555,17 +545,18 @@
     <a href="/" class="nav-logo">I Did A Thing</a>
     <ul class="nav-links">
       <li><a href="#features">Features</a></li>
-      <li><a href="#privacy">Privacy</a></li>
-      <li><a href="#support">Support</a></li>
-      <li><a href="https://apps.apple.com/us/app/i-did-a-thing/id6761332272" class="nav-cta">Get the App â $3.99</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="https://apps.apple.com/us/app/i-did-a-thing/id6761332272" class="nav-cta">Get the App &bull; $3.99</a></li>
     </ul>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
-    <p class="hero-eyebrow">iPhone Â· iOS 17+ Â· $3.99 one-time</p>
+    <p class="hero-eyebrow">iPhone &middot; iPad &middot; Apple Watch &middot; Apple Vision Pro &middot; $3.99 one-time</p>
     <h1 class="hero-title">I Did A<br /><em>Thing.</em></h1>
     <p class="hero-subtitle">A private, flexible activity log for the stuff you do and want to remember. No streaks. No shame. Just your life on record.</p>
+
     <div class="hero-actions">
       <a href="https://apps.apple.com/us/app/i-did-a-thing/id6761332272" class="btn-primary">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
@@ -586,12 +577,10 @@
   <!-- MANIFESTO -->
   <section class="manifesto reveal">
     <p class="manifesto-text">
-      <span class="muted">Did you change the oil?</span>
-      Water the plants?
-      <span class="muted">Take your meds?</span>
-      Fix the gutters?
+      <span class="muted">Did you change the oil?</span> Water the plants?
+      <span class="muted">Take your meds?</span> Fix the gutters?
       <em>Remember it all</em>
-      <span class="muted">â without the guilt of a streak to maintain.</span>
+      <span class="muted">&mdash; without the guilt of a streak to maintain.</span>
     </p>
   </section>
 
@@ -599,50 +588,43 @@
   <section class="features" id="features">
     <p class="section-label reveal">What it does</p>
     <div class="features-grid reveal">
-
       <div class="feature-card">
-        <span class="feature-icon">ð</span>
+        <span class="feature-icon">&#128203;</span>
         <h3 class="feature-title">Log Anything</h3>
-        <p class="feature-desc">Custom categories â Personal, House, Vehicle, Business â each with their own field types. Text, numbers, dates, toggles.</p>
+        <p class="feature-desc">Custom categories &mdash; Personal, House, Vehicle, Business &mdash; each with their own field types. Text, numbers, dates, toggles.</p>
       </div>
-
       <div class="feature-card">
-        <span class="feature-icon">ð¤</span>
+        <span class="feature-icon">&#129302;</span>
         <h3 class="feature-title">Saved Profiles</h3>
-        <p class="feature-desc">Pre-populate forms from saved profiles. Your car's make, model, and mileage auto-fill. Log oil changes in seconds.</p>
+        <p class="feature-desc">Pre-populate forms from saved profiles. Your car&rsquo;s make, model, and mileage auto-fill. Log oil changes in seconds.</p>
       </div>
-
       <div class="feature-card">
-        <span class="feature-icon">ð</span>
+        <span class="feature-icon">&#128276;</span>
         <h3 class="feature-title">Smart Reminders</h3>
         <p class="feature-desc">One-time or recurring. When a reminder fires, your form is already filled in. Just confirm and save.</p>
       </div>
-
       <div class="feature-card">
-        <span class="feature-icon">ð</span>
+        <span class="feature-icon">&#128197;</span>
         <h3 class="feature-title">Timeline + Calendar</h3>
-        <p class="feature-desc">Browse your history by day or month. Color-coded dots at a glance. Filter and search everything you've ever logged.</p>
+        <p class="feature-desc">Browse your history by day or month. Color-coded dots at a glance. Filter and search everything you&rsquo;ve ever logged.</p>
       </div>
-
       <div class="feature-card">
-        <span class="feature-icon">ð8/span>
+        <span class="feature-icon">&#128206;</span>
         <h3 class="feature-title">Attachments</h3>
-        <p class="feature-desc">Add photos and files as proof or receipts. Your oil change receipt, your plant care photo â right there in the log.</p>
+        <p class="feature-desc">Add photos and files as proof or receipts. Your oil change receipt, your plant care photo &mdash; right there in the log.</p>
       </div>
-
       <div class="feature-card">
-        <span class="feature-icon">ðï¸</span>
+        <span class="feature-icon">&#127897;&#65039;</span>
         <h3 class="feature-title">Voice + Siri</h3>
-        <p class="feature-desc">Just say "I did a thing." The Siri shortcut opens a pre-filled form, hands-free. In-app voice-to-text too.</p>
+        <p class="feature-desc">Just say &ldquo;I did a thing.&rdquo; The Siri shortcut opens a pre-filled form, hands-free. In-app voice-to-text too.</p>
       </div>
-
     </div>
   </section>
 
   <!-- PRIVACY -->
   <section class="privacy-band reveal" id="privacy">
     <h2>Your data stays<br /><em>yours. Always.</em></h2>
-    <p>No account required. No cloud sync. No subscription. Everything lives on your device as plain JSON. Back up to iCloud Drive or Files whenever you want â on your terms.</p>
+    <p>No account required. No cloud sync. No subscription. Everything lives on your device as plain JSON. Back up to iCloud Drive or Files whenever you want &mdash; on your terms.</p>
     <div class="privacy-pills">
       <div class="pill">No account</div>
       <div class="pill">No cloud</div>
@@ -657,26 +639,25 @@
   <section class="use-cases" id="use-cases">
     <h2 class="reveal">What people log</h2>
     <p class="subtitle reveal">If you did it and want to remember it, this is where it goes.</p>
-
     <div class="log-items reveal">
       <div class="log-item">
-        <div class="log-item-emoji">ð</div>
+        <div class="log-item-emoji">&#128663;</div>
         <div class="log-item-text">
-          <div class="log-item-title">Oil Change â Honda Civic</div>
-          <div class="log-item-meta">Synthetic 5W-30 Â· 47,312 mi Â· Jiffy Lube receipt attached</div>
+          <div class="log-item-title">Oil Change &mdash; Honda Civic</div>
+          <div class="log-item-meta">Synthetic 5W-30 &middot; 47,312 mi &middot; Jiffy Lube receipt attached</div>
         </div>
         <div class="log-item-dot dot-blue"></div>
       </div>
       <div class="log-item">
-        <div class="log-item-emoji">ð</div>
+        <div class="log-item-emoji">&#128138;</div>
         <div class="log-item-text">
           <div class="log-item-title">Took morning meds</div>
-          <div class="log-item-meta">Today at 8:14 AM Â· Reminder confirmed</div>
+          <div class="log-item-meta">Today at 8:14 AM &middot; Reminder confirmed</div>
         </div>
         <div class="log-item-dot dot-blue"></div>
       </div>
       <div class="log-item">
-        <div class="log-item-emoji">ð¿</div>
+        <div class="log-item-emoji">&#127807;</div>
         <div class="log-item-text">
           <div class="log-item-title">Watered the fiddle leaf</div>
           <div class="log-item-meta">Next reminder in 10 days</div>
@@ -684,15 +665,15 @@
         <div class="log-item-dot dot-orange"></div>
       </div>
       <div class="log-item">
-        <div class="log-item-emoji">ð </div>
+        <div class="log-item-emoji">&#127968;</div>
         <div class="log-item-text">
           <div class="log-item-title">HVAC filter replaced</div>
-          <div class="log-item-meta">3M Filtrete 1500 Â· Due again in 90 days</div>
+          <div class="log-item-meta">3M Filtrete 1500 &middot; Due again in 90 days</div>
         </div>
         <div class="log-item-dot dot-orange"></div>
       </div>
       <div class="log-item">
-        <div class="log-item-emoji">ð¦·</div>
+        <div class="log-item-emoji">&#129463;</div>
         <div class="log-item-text">
           <div class="log-item-title">Dentist appointment</div>
           <div class="log-item-meta">6-month checkup overdue by 3 weeks</div>
@@ -700,10 +681,10 @@
         <div class="log-item-dot dot-red"></div>
       </div>
       <div class="log-item">
-        <div class="log-item-emoji">ð§</div>
+        <div class="log-item-emoji">&#128295;</div>
         <div class="log-item-text">
           <div class="log-item-title">Fixed the kitchen faucet</div>
-          <div class="log-item-meta">Replaced cartridge Â· $12 part from Home Depot</div>
+          <div class="log-item-meta">Replaced cartridge &middot; $12 part from Home Depot</div>
         </div>
         <div class="log-item-dot dot-blue"></div>
       </div>
@@ -719,7 +700,7 @@
       Download on the App Store
     </a>
     <div style="margin-top:24px;display:flex;gap:20px;justify-content:center;flex-wrap:wrap;font-size:0.82rem;color:var(--warm-mid);font-weight:300;">
-      <span>iPhone</span><span>·</span><span>iPad</span><span>·</span><span>Apple Watch</span><span>·</span><span>Apple Vision Pro</span>
+      <span>iPhone</span><span>&middot;</span><span>iPad</span><span>&middot;</span><span>Apple Watch</span><span>&middot;</span><span>Apple Vision Pro</span>
     </div>
   </section>
 
@@ -731,7 +712,7 @@
       <li><a href="support.html">Support</a></li>
       <li><a href="mailto:support@ididathing.app">Contact</a></li>
     </ul>
-    <span class="footer-copy">Â© 2026 Gabriel Bellas. All rights reserved.</span>
+    <span class="footer-copy">&copy; 2026 Gabriel Bellas. All rights reserved.</span>
   </footer>
 
   <script>
@@ -744,7 +725,6 @@
         }
       });
     }, { threshold: 0.12 });
-
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>
